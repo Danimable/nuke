@@ -11,3 +11,18 @@ background-color: #d3d3d3
   margin: 0;
 
 }
+
+header {
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5%;
+  padding right: 5%;
+}
+
+/* Media Query für größere Bildschime */
+@media (min-width:960px) {
+
+  #navigation{
+    display: block;
