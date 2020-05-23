@@ -4,30 +4,27 @@
 
 html,
 body {
-font-family: sans-serif;
+font-family: 'Roboto', sans-serif;
 line-height: 1.4;
 color: #000;
 margin: 0;
 background-color: white
 }
 
-h1{
-  font-family: 'Parisienne';
-  font-size: 50px;
-  font-weight: bold;
-  letter-spacing: 3px;
-  color: goldenrod;
-  font-weight: bold;
-  text-shadow: 1px 1px 3px grey;
-
-
-}
-
 a {
   color: #000;
   text-decoration: none;
-  text-transform: capitalize;
+  text-transform: inherit;
   font-weight: bold;
+}
+
+h1 {
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+  text-transform: inherit;
+  font-weight: bold;
+
 }
 
 #navlinks {
@@ -35,54 +32,75 @@ a {
   padding-left: 0;
   margin: 0;
   display: none;
-
-
 }
 
-header {
-  height: 64px;
+header{
+  height: inherit;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 4%;
-  padding-right: 4%;
+  padding-left: 20px;
+  padding-right:20px;
+  padding-top: 20px;
+
+}
+
+/* header {
+  height: 100p
+  justify-content: space-between;
+  height: 79px;x;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5%;
+  padding-right: 5%;
   position: fixed;
   width: 100%;
-  background: #fff;
-
-}
-
-#navegacion{
-  display: none;
-}
-
-#navegacion.show {
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 64px;
-  width: 100%;
   background: white;
-  height: calc(100vh - 64px);
-  text-align: center;
+} */
+
+
+#logo{
+  height: 25px;
 }
-.menu {
+
+#navigation{
+    display: none;
+}
+
+#menu{
+  background-color: white
+  border: grey;
+}
+
+#cta {
   background-color: white;
-  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: black;
+  height: 20px;
+  width: 6px;
 }
 
 
-
-/* Media Query für größere Bildschime */
+  /* Media Query für größere Bildschime */
 @media (min-width:960px) {
 
-#navegacion{
+#navigation{
     display: block;
+}
+
+#cta{
+  display:block;
 }
 
 #menu {
   display: none;
-
   }
 
 #navlinks{
