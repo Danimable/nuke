@@ -1,14 +1,41 @@
-body {
-font-family: 'Roboto', sans-serif;
-line-height: 1.4;
-font-size: 100%
-color: #000;
-background-color: #d3d3d3
+*{
+  box-sizing: border-box;
 }
+
+html,
+body {
+font-family: sans-serif;
+line-height: 1.4;
+color: #000;
+margin: 0;
+background-color: white
+}
+
+h1{
+  font-family: 'Parisienne';
+  font-size: 50px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: goldenrod;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px grey;
+
+
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
 #navlinks {
   list-style-type: none;
   padding-left: 0;
   margin: 0;
+  display: none;
+
 
 }
 
@@ -17,12 +44,52 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 5%;
-  padding right: 5%;
+  padding-left: 4%;
+  padding-right: 4%;
+  position: fixed;
+  width: 100%;
+  background: #fff;
+
 }
+
+#navegacion{
+  display: none;
+}
+
+#navegacion.show {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 64px;
+  width: 100%;
+  background: white;
+  height: calc(100vh - 64px);
+  text-align: center;
+}
+.menu {
+  background-color: white;
+  border: none;
+}
+
+
 
 /* Media Query für größere Bildschime */
 @media (min-width:960px) {
 
-  #navigation{
+#navegacion{
     display: block;
+}
+
+#menu {
+  display: none;
+
+  }
+
+#navlinks{
+  display: flex;
+}
+
+#navlinks li {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
